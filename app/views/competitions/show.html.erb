@@ -1,0 +1,16 @@
+
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Prize:</strong>
+  <%= @competition.prize %>
+</p>
+<p>
+  <strong>Date:</strong>
+  <%= @competition.Date %>
+</p>
+<%= link_to 'Edit', edit_competition_path(@competition) %> |
+<%= link_to 'Back', competitions_path %>
+<h1>Timer</h1>
+
+<div id="until2d"></div>
+$('#until2d').countdown({until: '+2d'});
