@@ -7,10 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<!-- you don't need this here because these things are included in your application.js and application.css by the asset pipeline 
+
+Read more about the asset pipeline and the above javascript_include_tag and stylesheet_include_tag helpers
+
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css"> 
 <script type="text/javascript" src="js/jquery.plugin.js"></script> 
 <script type="text/javascript" src="js/jquery.countdown.js"></script>
+
+-->
+
 <%= yield %>
 
 </body>
